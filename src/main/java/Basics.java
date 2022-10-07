@@ -99,8 +99,8 @@ public class Basics {
          * Current count: 1
          * Current count: 0
          */
-        for(int i = 0; i < 10; i++){
-            System.out.println("Current Count: " + i);
+        for(int i = 10; i >= 0; i--){
+            System.out.println("Current count: " + i);
         }
 
     }
@@ -145,7 +145,7 @@ public class Basics {
         StringBuilder ret = new StringBuilder();
 
         // Fill in the rest of the body here
-        String[] splitted = to_split.split(" ", 7);
+        String[] splitted = to_split.split(" ");
         for(int i = 0; i < splitted.length; i++){
             String subStr = splitted[i];
             ret.append(subStr.charAt(0));
